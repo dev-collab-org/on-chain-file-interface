@@ -8,18 +8,19 @@ The goal of this repository is to craft an EIP for a standard smart contract int
 
 ## Background:  
 
-The trend of creating NFTs where the file which is the object of the token is generated partially or completely on-chain has resulted in a variety of methods of producing files from smart contracts. This repository is intended to craft a proposal that improves the ecosystem of on-chain file generation. 
+The trend of creating NFTs where the file which is the object of the token is generated partially or completely on-chain has resulted in a variety of methods of producing files from smart contracts. This repository is intended to craft a proposal that improves the ecosystem of on-chain file generation by establishing a standard interface for returning files in chunks.
 
-By establishing a standard interface for fetching object files the interoperality and 3rd party client support of on-chain file generation can improve dramatically. For example, this will allow for future generative contracts to remix source files on-chain and generate new outputs, for files to be incorporated on-chain into larger works, and allows a whole new category of client applications to be built which access file resources directly from the blockchain.
+Widespread adoption of a standard would lead to a sudden leap in the capabilities of the on-chain file generation community. For example, this will allow for future generative contracts to remix source files on-chain and generate new outputs, for on-chain files to be combined into larger works, and allows a whole new category of client applications to be built which access file resources directly from the blockchain.
 
 ## Summary:
 
 There are at least two significant problems to address in progressing the art of producing on-chain files. 
 
 ### Issue 1, no standard way to fetch on-chain files from contracts
+
 The first issue is the lack of a standard way to fetch the on-chain file from a contract which generates one. 
 
-In some cases the contract exposes public methods to generate the file or files for an on-chain resource. These file names are unique to each contract, preventing a whole layer of client-side support for proliferating beyond a few specially made clients. 
+In some cases the contract exposes public methods to generate the file or files for an on-chain resource. These file names are unique to each contract, preventing a whole layer of client-side support from proliferating beyond the few clients made specifically for a smart contract.
 
 In some cases the optional metadata extension to ERC-721 is used by returning the entire file as a base64 encoded value in one of the fields. This has significant limitations due to the overhead of base64 encoding plus the max gas per read limit described below.
 
@@ -33,7 +34,7 @@ By establishing a standard interface for fetching object files which uses chunks
 
 ## WEN ERC?
 
-Here is the road from early discussions to ERC, your help is appreciated at any step!!!
+Here is the road from early discussions to ERC, your help is appreciated at every step!!!
 
 Comment or submit PRs on this repo to help craft the proposal. Those who contribute will be credited as authors. 
 
