@@ -8,9 +8,11 @@ The goal of this repository is to craft an EIP for a standard smart contract int
 
 ## Background:  
 
-The trend of creating NFTs where the file which is the object of the token is generated partially or completely on-chain has resulted in a variety of methods of producing files from smart contracts. This repository is intended to craft a proposal that improves the ecosystem of on-chain file generation by establishing a standard interface for returning files in chunks.
+The popularity of on-chain NFTs has resulted in many non-standard interfaces for fetching files from smart contracts and one non-optimal standard interface (base64 json as data tokenUri). This repository is intended to craft an interface that improves the ecosystem of on-chain file generation by standardizing it and enabling file generation to be done in chunks. Note that the interface is not only for NFTs, ERC 721, or ERC 1155 or any other existing standard. It can be used in any type of contract. 
 
-Widespread adoption of a standard would lead to a sudden leap in the capabilities of the on-chain file generation community. For example, this will allow for future generative contracts to remix source files on-chain and generate new outputs, for on-chain files to be combined into larger works, and allows a whole new category of client applications to be built which access file resources directly from the blockchain.
+## Benefits:
+
+Widespread adoption of a standard would lead to a sudden leap in the capabilities of the on-chain file generation community. For example, this will allow for future generative contracts to remix files from other on-chain contracts and generate new outputs. A chunked interface will also allow generation of large files on-chain.
 
 ## Summary:
 
@@ -22,7 +24,7 @@ The first issue is the lack of a standard way to fetch the on-chain file from a 
 
 In some cases the contract exposes public methods to generate the file or files for an on-chain resource. These file names are unique to each contract, preventing a whole layer of client-side support from proliferating beyond the few clients made specifically for a smart contract.
 
-In some cases the optional metadata extension to ERC-721 is used by returning the entire file as a base64 encoded value in one of the fields. This has significant limitations due to the overhead of base64 encoding plus the max gas per read limit described below.
+In some cases the optional metadata extension to ERC-721 is used by returning the entire file as a value in one of the fields of a base 64 encoded JSON data URI. This has significant limitations due to the overhead of base64 encoding plus the max gas per read limit described below.
 
 
 ### Issue 2, remove Ethereum max read gas limitation from on-chain file generation
@@ -32,20 +34,27 @@ The second issue is the limit in filesize imposed by the gas limit on read trans
 By establishing a standard interface for fetching object files which uses chunks the per-call gas limits of clients can be removed as a bottleneck, allowing generation of arbitrarily large on-chain files.
 
 
-## WEN ERC?
+## Roadmap
 
-Here is the road from early discussions to ERC, your help is appreciated at every step!!!
+# Stage 1: create new interfaces and try using them
 
-Comment or submit PRs on this repo to help craft the proposal. Those who contribute will be credited as authors. 
+To start multiple devs will come up with interfaces that work for specific contracts they are familiar with. In some cases interfaces are already deployed that fit this description with only slight modification. In other cases the interfaces will be part of new contracts or just standalone sketches. 
 
-Open feedback is solicited via github issues, submit one at any time for brownie points.
+Participating devs will add their interfaces to this repo via PR. 
 
-Create a contract using these techniques and reference its code to become an early implementer. Early implementer contracts will be featured in a listing  somewhere.
 
-Once the proposal document (name TK) reaches a proposable state it can progress to the evaluation & support phase. Support will be solicited via a signable in-support-of-this doc somewhere and some experimental contracts will be published to exhibit the technology.
+# Stage 2: review and merge
 
-When sufficient support is generated an EIP will be generated and support for the proposal will move to the discussion on the forum post.
-At this phase projects which implement the proposal can describe themselves via the EIP number. 
+Participating devs will discuss the pros and cons of the various interfaces that have been submitted and reach a consensus on what is best for a standard. The final version will likely take elements from a few submitted interfaces. This stage will include discussion on the Ethereum Wizards forum.
+
+# Stage 3: pre-ERC implementations 
+
+Other devs will be solicited to integrate the standard into their contracts before the acceptance of the ERC. This makes sense for contracts that were going to expose custom file access methods anyway. 
+
+
+# Stage 4: ERC acceptance
+
+Once a critical mass of contracts are using the standard interface the EIP will likely be accepted and get an ERC number. Every one who has commited to the github will be listed as a co-author of the interface. 
 
 It will take a community, but implementers of ERC-721 and ERC-1155 with on-chain components will be sure to benefit from a world where an associated file standard exists. 
 
@@ -53,7 +62,7 @@ It will take a community, but implementers of ERC-721 and ERC-1155 with on-chain
 ## References: 
 
 
-Original motivation for this standardization effort came from the HasFile interface defined for the [Nonagon Cup contract](https://etherscan.io/address/0xa3a73cd8adf2a75c44185d1588d7d2d9f3f07544#code#F6#L1). This interface allows for a single file per token generated in varying size chunks. It also includes generation of a file name. 
+Motivation for this standardization effort came from the HasFile interface defined for the [Nonagon Cup contract](https://etherscan.io/address/0xa3a73cd8adf2a75c44185d1588d7d2d9f3f07544#code#F6#L1). This interface allows for a single file per token generated in varying size chunks. It also includes generation of a file name. 
 
 ```
 /**
