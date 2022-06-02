@@ -36,23 +36,23 @@ By establishing a standard interface for fetching object files which uses chunks
 
 ## Roadmap
 
-# Stage 1: create new interfaces and try using them
+### Stage 1: create new interfaces and try using them
 
 To start multiple devs will come up with interfaces that work for specific contracts they are familiar with. In some cases interfaces are already deployed that fit this description with only slight modification. In other cases the interfaces will be part of new contracts or just standalone sketches. 
 
 Participating devs will add their interfaces to this repo via PR. 
 
 
-# Stage 2: review and merge
+### Stage 2: review and merge
 
 Participating devs will discuss the pros and cons of the various interfaces that have been submitted and reach a consensus on what is best for a standard. The final version will likely take elements from a few submitted interfaces. This stage will include discussion on the Ethereum Wizards forum.
 
-# Stage 3: pre-ERC implementations 
+### Stage 3: pre-ERC implementations 
 
 Other devs will be solicited to integrate the standard into their contracts before the acceptance of the ERC. This makes sense for contracts that were going to expose custom file access methods anyway. 
 
 
-# Stage 4: ERC acceptance
+### Stage 4: ERC acceptance
 
 Once a critical mass of contracts are using the standard interface the EIP will likely be accepted and get an ERC number. Every one who has commited to the github will be listed as a co-author of the interface. 
 
