@@ -36,27 +36,33 @@ By establishing a standard interface for fetching object files which uses chunks
 
 ## Roadmap
 
-### Stage 1: create new interfaces and try using them
+### Stage 1: Make Multiple Prototypes
+
+#### devs create different interfaces from scratch for new or existing contracts
 
 To start multiple devs will come up with interfaces that work for specific contracts they are familiar with. In some cases interfaces are already deployed that fit this description with only slight modification. In other cases the interfaces will be part of new contracts or just standalone sketches. 
 
-Participating devs will add their interfaces to this repo via PR. 
+Participating devs will add their interfaces to this repo via PR via the following steps:
+
+- create a new interface to get file content from an on-chain contract 
+- try using it from an off-chain client
+- add it to the /og-prototypes directory
 
 
-### Stage 2: review and merge
+### Stage 2: Review Prototypes
 
-Participating devs will discuss the pros and cons of the various interfaces that have been submitted and reach a consensus on what is best for a standard. The final version will likely take elements from a few submitted interfaces. This stage will include discussion on the Ethereum Wizards forum.
+Participating devs will discuss the pros and cons of the various interfaces that have been submitted and reach a consensus on what is best for a standard. The final version will likely take elements from a few submitted interfaces. This stage will include discussion with existing ERP community on the Ethereum Wizards forum.
 
-### Stage 3: pre-ERC implementations 
+### Stage 3: Pick Final Version 
 
-Other devs will be solicited to integrate the standard into their contracts before the acceptance of the ERC. This makes sense for contracts that were going to expose custom file access methods anyway. 
+Once review has covered enough variations and questions to have a standard that seems likely to be a solid improvement for the Solidity coding community, a final version will be locked in place and an EIP number will be picked. Every one who has commited to the repo hosted on GitHub prior to the final version pick will be listed as a co-author of the interface. 
+
+After this point, devs will be solicited to integrate the standard into their contracts before the acceptance of the EIP into an ERC. This makes sense for contracts that were going to expose custom file access methods anyway since they get incremental benefits from a growing ecosystem of client support. 
 
 
 ### Stage 4: ERC acceptance
 
-Once a critical mass of contracts are using the standard interface the EIP will likely be accepted and get an ERC number. Every one who has commited to the github will be listed as a co-author of the interface. 
-
-It will take a community, but implementers of ERC-721 and ERC-1155 with on-chain components will be sure to benefit from a world where an associated file standard exists. 
+Once a critical mass of contracts are using the standard interface the EIP will likely be accepted and get ERC status. It will take a community, but implementers of ERC-721 and ERC-1155 with on-chain components will be sure to benefit from a world where an associated file standard exists. 
 
 
 ## References: 
