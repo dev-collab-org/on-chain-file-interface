@@ -68,7 +68,7 @@ Once a critical mass of contracts are using the standard interface the EIP will 
 ## References: 
 
 
-Motivation for this standardization effort came from the HasFile interface defined for the [Nonagon Cup contract](https://etherscan.io/address/0xa3a73cd8adf2a75c44185d1588d7d2d9f3f07544#code#F6#L1). This interface allows for a single file per token generated in varying size chunks. It also includes generation of a file name. 
+Motivation for this standardization effort came from the HasFile interface defined for the [Nonagon Cup contract]([https://github.com/ivyroot/nonagon-cup]). This interface allows for a single file per token generated in varying size chunks. It also includes generation of a file name. 
 
 ```
 /**
