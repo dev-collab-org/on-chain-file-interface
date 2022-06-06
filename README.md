@@ -22,7 +22,7 @@ There are at least two significant problems to address in progressing the art of
 
 The first issue is the lack of a standard way to fetch the on-chain file from a contract which generates one. 
 
-In some cases the contract exposes public methods to generate the file or files for an on-chain resource. These file names are unique to each contract, preventing a whole layer of client-side support from proliferating beyond the few clients made specifically for a smart contract.
+In some cases the contract exposes public methods to generate the file or files for an on-chain resource. These file names are unique to each contract, preventing a whole layer of client-side support from proliferating beyond the few clients made for one specific smart contract.
 
 In some cases the optional metadata extension to ERC-721 is used by returning the entire file as a value in one of the fields of a base 64 encoded JSON data URI. This has significant limitations due to the overhead of base64 encoding plus the max gas per read limit described below.
 
