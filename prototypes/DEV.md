@@ -1,7 +1,7 @@
 
 # Steps to Add a Prototype
 
-- create a new Solidity interface to get file content from an on-chain contract 
+- write a Solidity interface just for the purposes of getting file content from a smart contract
+- make a smart contract that uses your interface to return files
 - try using it from an off-chain or on-chain client
-- implement the tests TK
-- create a new directory in [prototypes](./) with the interface and test files
+- create a new directory in [prototypes](./) with the interface and a README.md
