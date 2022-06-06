@@ -1,7 +1,7 @@
 
 Implemented In Contract: Nonagon Cup ERC 721 NFT
 
-Public Repo: [Nonagon Cup Github Repo](https://github.com/ivyroot/nonagon-cup
+Public Repo: [Nonagon Cup Github Repo](https://github.com/ivyroot/nonagon-cup)
 
 Blockchain Explorer: [Nonagon Cup Etherscan](https://etherscan.io/address/0xa3a73cd8adf2a75c44185d1588d7d2d9f3f07544#code)
 
