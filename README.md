@@ -42,11 +42,7 @@ By establishing a standard interface for fetching object files which uses chunks
 
 To start multiple devs will come up with interfaces that work for specific contracts they are familiar with. In some cases interfaces are already deployed that fit this description with only slight modification. In other cases the interfaces will be part of new contracts or just standalone sketches. 
 
-Participating devs will add their interfaces to this repo via PR via the following steps:
-
-- create a new interface to get file content from an on-chain contract 
-- try using it from an off-chain client
-- add it to the /og-prototypes directory
+Participating devs will add their interfaces to this repo via PR via the steps describe in the [prototypes](./prototypes/Dev.md) directory. 
 
 
 ### Stage 2: Review Prototypes
