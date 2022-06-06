@@ -8,6 +8,6 @@ Some limitations of Nonagon Cup's HasFile to consider:
 - it does not return content type to the client. Instead the first block holds the file format specific header bytes.
 - it requires contracts to add a public method that returns a filename for each file. Each additional public method name seems to increase deployment gas costs a lot. 
 - requires contracts to add a getFullFile public method which is duplicative of getFileChunk.
-- requires the contract to know how many chunks there are via the getFileChunksTotal. it would be easier to implement on-chain file generation if the end condition can optionally be part of the generator function.
+- requires contracts to know how many chunks there are via the getFileChunksTotal. it would be easier to implement on-chain file generation if the end condition can optionally be part of the generator function.
 - extra deployment gas costs from requiring contracts to implement public methods getFullFile and getFileChunksTotal
 
