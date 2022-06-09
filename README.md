@@ -44,15 +44,15 @@ To scope out the possibilities, multiple devs will contribute interfaces that wo
 
 All prototype interfaces are intended to be experiments which will help create the standard interface but will not conform to it.
 
-Participating devs will add their interfaces to this repo via the steps described in the [interfaces directory](./if/CONTRIBUTING.md). 
+Participating devs will add their interfaces to this repo via the steps described in the [interfaces directory](./interfaces/CONTRIBUTING.md). 
 
 
-### Stage 2: Review Prototypes
+### Stage 2: Discuss Prototypes
 
 Participating devs will try out the various interfaces that have been submitted, discuss the pros and cons of them, and reach a consensus on what is best for a standard. The final version will likely take elements from a few submitted interfaces. This stage will include discussion with existing EIP/ERC community on the Ethereum Wizards forum.
 
 
-### Stage 3: Pick Final Version 
+### Stage 3: Draft Final Version 
 
 Once review has covered enough variations and questions to have a standard that seems likely to be a solid improvement for the Solidity coding community, a final version will be locked in place. Every one who has commited to the repo hosted on GitHub prior to the final version pick will be listed as a co-author of the interface.
 
