@@ -1,12 +1,9 @@
 
-Implemented In Contract: Nonagon Cup ERC 721 NFT
+Implemented in the Nonagon Cup ERC 721 NFT, the HasFile interface was created to allow STL files to be downloaded from contract. The interface supports a single file and filename for each token in the NFT. A simple javascript client which downloads these files can be tried out on the website file download pages, e.g. [nonagoncup.com/files/1](https://nonagoncup.com/files/1) 
 
-Public Repo: [Nonagon Cup Github Repo](https://github.com/ivyroot/nonagon-cup)
+Public Repo: [https://github.com/ivyroot/nonagon-cup](https://github.com/ivyroot/nonagon-cup)
 
-Blockchain Explorer: [Nonagon Cup Etherscan](https://etherscan.io/address/0xa3a73cd8adf2a75c44185d1588d7d2d9f3f07544#code)
-
-
-The Nonagon Cup contract is the original motivation for this standardization effort. It includes the [HasFile interface](https://github.com/ivyroot/nonagon-cup/blob/main/contracts/ivyroot/HasFile.sol). This interface allows for a single file per token generated in varying size chunks. 
+Etherscan: [https://etherscan.io/address/0xa3a73cd8adf2a75c44185d1588d7d2d9f3f07544#code](https://etherscan.io/address/0xa3a73cd8adf2a75c44185d1588d7d2d9f3f07544#code)
 
 
 Some limitations of Nonagon Cup's HasFile to consider:
