@@ -36,21 +36,23 @@ By establishing a standard interface for fetching object files which uses chunks
 
 ## Roadmap
 
-### Stage 1: Make Multiple Prototypes
+### Stage 1: Contribute Interface Prototypes
 
 #### devs create different interfaces from scratch for new or existing contracts
 
-To start multiple devs will come up with interfaces that work for specific contracts they are familiar with. Actually using an interface is important to detect friction points that are not obvious when designing it. In some cases public methods are already deployed that can be turned into interfaces with only slight modification. In other cases prototype interfaces will be part of new contracts or just standalone sketches. 
+To scope out the possibilities, multiple devs will contribute interfaces that work for specific contracts they are familiar with. In some cases public methods are already deployed that can be turned into interfaces with only slight modification. In other cases prototype interfaces will be part of new contracts or just standalone sketches.
 
-Participating devs will add their interfaces to this repo via PR via the steps describe in the [prototypes](./prototypes/DEV.md) directory. All prototypes are intended to be experiments which will help create the standard interface but will not conform to it.
+All prototype interfaces are intended to be experiments which will help create the standard interface but will not conform to it.
+
+Participating devs will add their interfaces to this repo via the steps described in the [interfaces directory](./interfaces/CONTRIBUTING.md). 
 
 
-### Stage 2: Review Prototypes
+### Stage 2: Discuss Prototypes
 
 Participating devs will try out the various interfaces that have been submitted, discuss the pros and cons of them, and reach a consensus on what is best for a standard. The final version will likely take elements from a few submitted interfaces. This stage will include discussion with existing EIP/ERC community on the Ethereum Wizards forum.
 
 
-### Stage 3: Pick Final Version 
+### Stage 3: Draft Final Version 
 
 Once review has covered enough variations and questions to have a standard that seems likely to be a solid improvement for the Solidity coding community, a final version will be locked in place. Every one who has commited to the repo hosted on GitHub prior to the final version pick will be listed as a co-author of the interface.
 
