@@ -36,7 +36,7 @@ By establishing a standard interface for fetching object files which uses chunks
 
 ## Roadmap
 
-### Stage 1: Contribute Interface Prototypes
+### Stage 1: Contribute Interfaces and Prototypes
 
 #### devs create different interfaces from scratch for new or existing contracts
 
@@ -45,6 +45,9 @@ To scope out the possibilities, multiple devs will contribute interfaces that wo
 All prototype interfaces are intended to be experiments which will help create the standard interface but will not conform to it.
 
 Participating devs will add their interfaces to this repo via the steps described in the [interfaces directory](./interfaces/CONTRIBUTING.md). 
+
+Interfaces for which there exists a publicly accessible client will also be added to the
+[prototypes directory](./prototypes/) with more info about the project.
 
 
 ### Stage 2: Discuss Prototypes

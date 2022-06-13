@@ -3,8 +3,6 @@ Implemented in the Nonagon Cup ERC 721 NFT, the HasFile interface was created to
 
 Public Repo: [https://github.com/ivyroot/nonagon-cup](https://github.com/ivyroot/nonagon-cup)
 
-Etherscan: [https://etherscan.io/address/0xa3a73cd8adf2a75c44185d1588d7d2d9f3f07544#code](https://etherscan.io/address/0xa3a73cd8adf2a75c44185d1588d7d2d9f3f07544#code)
-
 
 Some limitations of Nonagon Cup's HasFile to consider:
 
