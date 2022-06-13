@@ -36,7 +36,7 @@ By establishing a standard interface for fetching object files which uses chunks
 
 ## Roadmap
 
-### Stage 1: Contribute Interfaces and Prototypes
+### Stage 1: Collect Interfaces and Prototypes
 
 #### devs create different interfaces from scratch for new or existing contracts
 
@@ -50,14 +50,18 @@ Interfaces for which there exists a publicly accessible client will also be adde
 [prototypes directory](./prototypes/) with more info about the project.
 
 
-### Stage 2: Discuss Prototypes
+### Stage 2: Discussion and Test Use
 
-Participating devs will try out the various interfaces that have been submitted, discuss the pros and cons of them, and reach a consensus on what is best for a standard. The final version will likely take elements from a few submitted interfaces. This stage will include discussion with existing EIP/ERC community on the Ethereum Wizards forum.
+Participants will try out the various interfaces that have been submitted, discuss the pros and cons of them, and reach a consensus on what is best for a standard. More prototypes and interfaces will likely be built as part of Stage 2. Stage 1 collection will continue during part or all of Stage 2.
+
+This stage will include discussion with existing EIP/ERC community on the Ethereum Wizards forum.
 
 
-### Stage 3: Draft Final Version 
+### Stage 3: Set Final Version 
 
-Once review has covered enough variations and questions to have a standard that seems likely to be a solid improvement for the Solidity coding community, a final version will be locked in place. Every one who has commited to the repo hosted on GitHub prior to the final version pick will be listed as a co-author of the interface.
+Once review has covered enough variations and questions to have a standard that seems likely to be a solid improvement for the Solidity coding community, a final version will be locked in place. The final version will likely take elements from a few submitted interfaces. 
+
+Every one who has commited to the repo hosted on GitHub prior to the final version pick will be listed as a co-author of the interface.
 
 After a final version is crafted, devs will be solicited to integrate the standard into their contracts before the acceptance of the EIP into an ERC. This makes sense for contracts that were going to expose custom file access methods anyway since they get incremental benefits from a growing ecosystem of client support. 
 
